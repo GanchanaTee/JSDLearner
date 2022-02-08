@@ -1,17 +1,18 @@
 /*---- Common ----*/
 /* H2 */
-.section{
-  margin-bottom: 64px;
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
 }
+
 .section-title {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 24px;
 }
-.container{
-  width: 100%;
-  max-width: 1200px;
-  margin: 0px auto;
+.section{
+  margin-bottom: 64px;
 }
 
 /*---- Menu ----*/
