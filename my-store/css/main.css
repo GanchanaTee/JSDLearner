@@ -1,12 +1,12 @@
 /*---- Common ----*/
 /* H2 */
-.section{
-  margin-bottom: 64px;
-}
 .section-title {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 24px;
+}
+.section{
+  margin-bottom: 64px;
 }
 .container{
   width: 100%;
