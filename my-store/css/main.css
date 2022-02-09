@@ -28,6 +28,7 @@ body{
   position: sticky;
   top: 0px;
   background-color: white;
+  z-index: 1 ;
 }
 .logo{
   height: 20px;
