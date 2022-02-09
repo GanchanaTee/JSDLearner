@@ -1,11 +1,7 @@
 body{
   font-family: 'Rubik', sans-serif;
 }
-.menu-bar{
-  position: sticky;
-  top: 0px;
-  background-color: white;
-}
+
 /*---- Common ----*/
 /* H2 */
 .container{
@@ -29,6 +25,9 @@ body{
   display: flex ;
   justify-content: space-between ;
   align-items: center;
+  position: sticky;
+  top: 0px;
+  background-color: white;
 }
 .logo{
   height: 20px;
