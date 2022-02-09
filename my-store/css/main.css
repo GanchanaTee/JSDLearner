@@ -28,7 +28,7 @@ body{
   position: sticky;
   top: 0px;
   background-color: white;
-  z-index: 1 ;
+  z-index:1 ;
 }
 .logo{
   height: 20px;
@@ -50,6 +50,9 @@ body{
   /* Change Front */
   font-family: 'Rubik', sans-serif;
   height: 720px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
 }
 .hero-title {
   font-size: 64px;
