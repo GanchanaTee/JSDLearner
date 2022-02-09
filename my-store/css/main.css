@@ -16,7 +16,24 @@
 }
 
 /*---- Menu ----*/
+.menu-bar{
+  height: 72px;
+  display: flex ;
+  justify-content: space-between ;
+  align-items: center;
+}
+.logo{
+  height: 20px;
+}
+.nav-item{
+  margin-left: 24px;
+}
+.nav-list{
+  display: flex ;
+  justify-content: space-around ;
+  align-items: center;
 
+}
 /*---- Hero Section ----*/
 .hero-section {
   background-image: url('../images/hero-background.jpg'); /* Photo by Nicholas Kampouris on Unsplash */
