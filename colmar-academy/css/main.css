@@ -1,0 +1,17 @@
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 18px;
+    margin: 12px 12px;
+    padding: 0px 16px;
+    width: calc(100% / 4);
+    box-sizing: border-box;
+    position: relative;
+}
+.card-img-top{
+    object-fit: cover;
+}
+.item-list{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
