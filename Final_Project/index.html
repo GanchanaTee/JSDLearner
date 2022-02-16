@@ -1,147 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>The Reality</title>
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <link rel="stylesheet" href="./CSS/main.css" /> 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,500&display=swap" rel="stylesheet">    </head >
-    <body style="font-family: 'Rubik', sans-serif;">
-        <header class="header-nav">
-            <div class="com-nav">
-                <nav class="navbar" style="padding: 0px 24px;">
-                    <div style="height: 100%; display: flex; align-items: center;">
-                        <img src="./images/My-Reality2.png" alt="logo" style="width: 50px;">
-                        <div >
-                            <p style="margin: 0px; font-size: 35px;color: #cf4b9c; "><span style="color: #946dc0;">The</span>Reality</p>
-                        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Reality</title>
+    <link rel="icon" type="images/.png" href="./images/My-Reality2.png" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/main.css" /> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,500&display=swap" rel="stylesheet">    
+</head >
+<body style="font-family: 'Rubik', sans-serif;">
+    <header class="header-nav">
+        <div class="com-nav" style="background-color: #f3c9e3;">
+            <nav class="navbar" style="padding: 0px 24px;">
+                <div style="height: 100%; display: flex; align-items: center;">
+                    <img src="./images/My-Reality2.png" alt="logo" style="width: 50px;">
+                    <div >
+                        <p style="margin: 0px; font-size: 35px;color: #cf4b9c; "><span style="color: #946dc0;">The</span>Reality</p>
                     </div>
-                    <div class="nav-menu">
-                        <ul>
-                            <li><a herf="#">Home</a></li>
-                            <li><a herf="#">My Activity</a></li>
-                            <li><a herf="#">Community</a></li>
-                            <li><a herf="#">Profile</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-            <div class="mobile-view">
-                <nav class="navbar" style="padding: 0px 12px;">
-                    <div style="height: 100%; display: flex; align-items: center;">
-                        <img src="./images/My-Reality2.png" alt="logo" style="width: 50px;">
-                    </div>
-                    <div>
-                        <img src="./images/Hamburger_icon.svg.png" alt="" style="width: 50px;">
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <section class="in-form"> 
-            <div class="com-view-m in-form-tem" >
-                <h1>Add Activities</h1>
-                <h3 id="clock" style="font-size: 80px;"> 00:00:00 </h3>
-                <h4 id="duration">Duration</h4>
-                <form >
-                    <div class="form-pad">
-                        <label for="input-name">Name: </label> <br>
-                        <input type="text" id="input-name" placeholder="Enter name" name="name" class="form-input">
-                    </div>
-                    <div class="form-pad" style="width: 50%; margin-left: 25%; margin-right: 25%;">
-                        <label for="input-name">Activity Type</label> <br>
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner" >
-                                 <div class="carousel-item active" style="display:flex; justify-content: center; flex-direction: column; align-items: center;" >
-                                    <div style="margin: 25px 0px;">
-                                        <img src="./images/running-color.png" class="d-block" alt="..." style="height: 250px; ">
-                                    </div> 
-                                    <div>
-                                        <input class="form-check-input" type="radio" name="act-type" id="exampleRadios2" value="running">
-                                        <label for="">Running</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
-                    </div>
-                    <div class="form-pad">
-                        <label for="input-des">Description: </label> <br>
-                        <textarea name="Des" cols="40" rows="3" class="form-input"></textarea>
-                    </div>
-                    <div class="form-pad">
-                        <label for="week">Date:</label> <br>
-                        <input type="date" id="week" name="date" class="form-input">
-                    </div>
-                    <div class="form-pad" style="display: flex; justify-content: center;">
-                        <div style="padding: 0px 24px;">
-                            <label for="appt">Start time:</label> <br>
-                            <input type="time" id="appt" name="start-time" class="form-input">
-                        </div>
-                        <div style="padding: 0px 24px;">
-                            <label for="appt">Stop time:</label> <br>
-                            <input type="time" id="appt" name="stop-time" class="form-input">
-                        </div>
-                    </div>
-                    <div class="form-pad">
-                        <label for="input-name">Calorie: </label> <br>
-                        <input type="number" id="input-name" name="name" class="form-input" style="width: 150px;"> <br>
-                        <label >kcal</label>
-                    </div>
-                    <button type="submit" class="form-pad add-button">Add</button>
-                  </form>
-            </div>
-            <div class="mobile-view in-form-tem" >
-                <h1>Add Activities</h1>
-                <h3 id="timer" style="font-size: 60px;">00:00:00</h3>
-                <div id="duration">
-                    <h4>Duration</h4>
                 </div>
-                <form >
-                    <div class="form-pad">
-                        <label for="input-name">Name: </label> <br>
-                        <input type="text" id="input-name" placeholder="Enter name" name="name" class="form-input">
-                    </div>
-                    <div class="form-pad">
-                        <label for="input-name">Activity Type</label> <br>
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" >
-                            <div class="carousel-inner" style="width: 100%; display: flex; justify-content: space-between;">
-                                 <div class="carousel-item active" style="display:flex; justify-content: center; flex-direction: column; align-items: center;" >
-                                    <div style="margin: 25px 0px;">
-                                        <img src="./images/running-color.png" class="d-block" alt="..." style="height: 250px; ">
-                                    </div> 
-                                    <div>
-                                        <input class="form-check-input" type="radio" name="act-type" id="exampleRadios2" value="running">
-                                        <label for="">Running</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </button>
-                          </div>
-                    </div>
-                    <div class="form-pad">
-                        <label for="input-des">Description: </label> <br>
-                        <textarea name="Des" cols="30" rows="3" class="form-input"></textarea>
-                    </div>
-                    <button type="submit" class="form-pad add-button">Start</button>
-                  </form>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a herf="#">Home</a></li>
+                        <li><a href="./index.html">My Activities</a></li>
+                        <li><a herf="#">Community</a></li>
+                        <li><a herf="#">Profile</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="mobile-view" style="background-color: #f3c9e3;">
+            <nav class="navbar" style="padding: 0px 12px;">
+                <div style="height: 100%; display: flex; align-items: center;">
+                    <img src="./images/My-Reality2.png" alt="logo" style="width: 50px;">
+                </div>
+                <div>
+                    <img src="./images/Hamburger_icon.svg.png" alt="" style="width: 50px;">
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="my-act">
+        <div class="com-view-m" style="text-align: center; padding: 16px 24px; ">
+            <h1 style="margin: 24px 0px; text-align: start; color: #946dc0;">My Activities</h1>
+            <div style="margin: 24px 0px; display: flex; justify-content: center;">
+                <div style="padding: 0px 48px;">
+                    <h2>Longest streak</h2>
+                    <div class="flame">
+                        <div style="position:relative;">
+                        <img src="./images/flame-logo.png" width="120px" height="130px" >
+                        <h1 class="text_over_image" style="font-size: 20px;">10 days</h1>
+                        </div>
+                  </div>
+                </div>
+                <div style="padding: 0px 48px;">
+                    <h2>Minutes in month</h2>
+                    <h3><span style="font-size: 90px;">1088</span>  mins</h3>
+                </div>
+                <div style="padding: 0px 48px;">
+                    <h2>Calories in month</h2>
+                    <h3><span style="font-size: 90px;">2120</span>  kcal</h3>
+                </div>
             </div>
-        </section>
-    </body>
+            <div style="display: flex; justify-content: flex-end;">
+                <a href="./add-act.html"><button href class="add-button" style="padding: 10px 40px;">Add</button></a>
+            </div>
+            <div class="act-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Activity</th>
+                          <th>Activity Type</th>
+                          <th>Duration</th>
+                          <th>Calories</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>15/2/2022</th>
+                          <td>Run 1 km.</td>
+                          <td>Run</td>
+                          <td>00:30:45s</td>
+                          <td>300</td>
+                        </tr>
+                        <tr>
+                            <th>16/2/2022</th>
+                            <td>Swim 1 hr.</td>
+                            <td>Swim</td>
+                            <td>01:00:15s</td>
+                            <td>200</td>
+                        </tr>
+                        <tr>
+                            <th>17/2/2022</th>
+                            <td>Walk 1 hr.</td>
+                            <td>Walk</td>
+                            <td>01:00:00s</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <th>18/2/2022</th>
+                            <td>Run 1 km.</td>
+                            <td>Run</td>
+                            <td>00:25:45s</td>
+                            <td>300</td>
+                          </tr>
+                          <tr>
+                              <th>19/2/2022</th>
+                              <td>Swim 1 hr.</td>
+                              <td>Swim</td>
+                              <td>01:00:15s</td>
+                              <td>300</td>
+                          </tr>
+                          <tr>
+                              <th>20/2/2022</th>
+                              <td>Walk 1 hr.</td>
+                              <td>Walk</td>
+                              <td>01:00:00s</td>
+                              <td>200</td>
+                          </tr>
+                          <tr>
+                            <th>21/2/2022</th>
+                            <td>Run 1 km.</td>
+                            <td>Run</td>
+                            <td>00:25:45s</td>
+                            <td>150</td>
+                          </tr>
+                          <tr>
+                              <th>22/2/2022</th>
+                              <td>Swim 1 hr.</td>
+                              <td>Swim</td>
+                              <td>01:00:15s</td>
+                              <td>300</td>
+                          </tr>
+                          <tr>
+                              <th>23/2/2022</th>
+                              <td>Walk 1 hr.</td>
+                              <td>Walk</td>
+                              <td>01:00:00s</td>
+                              <td>300</td>
+                          </tr>
+                          <tr>
+                            <th>24/2/2022</th>
+                            <td>Swim 1 hr.</td>
+                            <td>Swim</td>
+                            <td>01:00:15s</td>
+                            <td>300</td>
+                        </tr>
+                        <tr>
+                            <th>25/2/2022</th>
+                            <td>Walk 1 hr.</td>
+                            <td>Walk</td>
+                            <td>01:00:00s</td>
+                            <td>300</td>
+                        </tr>
+                      </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="mobile-view" style="text-align: center; padding: 16px 24px; ">
+            <h1 style="margin: 24px 0px; color: #946dc0;">My Activities</h1>
+            <div style="margin: 24px 0px; display: flex; justify-content: center;">
+                <div style="padding: 0px 16px;">
+                    <h2>Longest streak</h2>
+                    <div class="flame">
+                        <div style="position:relative;">
+                        <img src="./images/flame-logo.png" width="120px" height="130px" >
+                        <h1 class="text_over_image" style="font-size: 20px;">10 days</h1>
+                        </div>
+                  </div>
+                </div>
+                <div style="padding: 0px 16px;">
+                    <h2>Minutes in month</h2>
+                    <h3><span style="font-size: 70px;">1088</span>  mins</h3>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: flex-end; padding-bottom: 10px;">
+                <a href="./add-act.html"><img src="./images/plus-logo.png" style="width: 20px;" alt=""></a>
+            </div>
+            <div class="act-table">
+                <table class="table">
+                    <thead>
+                        <tr>
+                          <th>Date</th>
+                          <th>Activity Type</th>
+                          <th>Duration</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th>15/2/2022</th>
+                          <td>Run</td>
+                          <td>00:30:45s</td>
+                        </tr>
+                        <tr>
+                            <th>16/2/2022</th>
+                            <td>Swim</td>
+                            <td>01:00:15s</td>
+                        </tr>
+                        <tr>
+                            <th>17/2/2022</th>
+                            <td>Walk</td>
+                            <td>01:00:00s</td>
+                        </tr>
+                        <tr>
+                            <th>18/2/2022</th>
+                            <td>Run</td>
+                            <td>00:25:45s</td>
+                          </tr>
+                          <tr>
+                              <th>19/2/2022</th>
+                              <td>Swim</td>
+                              <td>01:00:15s</td>
+                          </tr>
+                          <tr>
+                              <th>20/2/2022</th>
+                              <td>Walk</td>
+                              <td>01:00:00s</td>
+                          </tr>
+                          <tr>
+                            <th>21/2/2022</th>
+                            <td>Run</td>
+                            <td>00:25:45s</td>
+                          </tr>
+                          <tr>
+                              <th>22/2/2022</th>
+                              <td>Swim</td>
+                              <td>01:00:15s</td>
+                          </tr>
+                          <tr>
+                              <th>23/2/2022</th>
+                              <td>Walk</td>
+                              <td>01:00:00s</td>
+                          </tr>
+                          <tr>
+                            <th>24/2/2022</th>
+                            <td>Swim</td>
+                            <td>01:00:15s</td>
+                        </tr>
+                        <tr>
+                            <th>25/2/2022</th>
+                            <td>Walk</td>
+                            <td>01:00:00s</td>
+                        </tr>
+                      </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
 </html>
