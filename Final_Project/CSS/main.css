@@ -1,0 +1,146 @@
+/*---------------------------------Web responsive--------------------------*/
+@media screen and (max-width: 646px){
+    .mobile-view{
+        display: block;
+        max-width: 390px;
+        margin-left: auto;
+        margin-right: auto;
+    }  
+    .com-view-m{
+        display: none;
+    }
+    .com-nav{
+        display: none;
+    }
+}
+@media screen and (min-width: 647px){
+    .mobile-view{
+       display: none;
+    }  
+    .com-view-m{
+        display:block;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .com-nav{
+        display: block;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .mobile-view{
+       display: none;
+    }  
+    .com-view-m{
+        display: block;
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    .mobile-view{
+        display: none;
+    }  
+    .com-view-m{
+        display: block;
+        max-width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+    .mobile-view{
+       display: none;
+    }  
+    .com-view-m{
+        display: block;
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 1400px){
+    .mobile-view{
+       display: none;
+    }  
+    .com-view-m{
+        display: block;
+        width: 1320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.carousel-control-next-icon{
+    background-image: url(../images/arrow-right-color.png);
+}
+.carousel-control-prev-icon{
+    background-image: url(../images/arrow-left-color.png);
+}
+/*-----------------------------------------------------------------------*/
+/*----------------------------------------Nav bar------------------------*/
+.navbar{
+    height: 60px; 
+    display: flex; 
+    align-content: center; 
+}
+.nav-menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: centre;
+    list-style-type: none;
+}
+.nav-menu ul li {
+    padding-left: 20px;
+}
+/*------------------------------------------------------------------------*/
+
+
+
+#clock {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+#duration {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+}
+.in-form-tem{
+    text-align: center; 
+    background-color: black; 
+    color: white;
+    padding: 16px 24px; 
+}
+.form-pad{
+    padding: 16px 0px;
+}
+.form-input{
+    margin: 2px;
+    border: 1px solid rgb(191, 80, 255);
+    padding: 5px;
+    border-radius: 30px;
+    color:black;
+    text-align: center;
+}
+.act-type{
+    display:flex; 
+    justify-content: center; 
+    flex-direction: column; 
+    align-items: center;
+}
+.add-button{
+    background-color: #cf5291;
+    border: none;
+    border-radius: 60px;
+    color: white;
+    padding: 15px 90px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 2px;
+}
