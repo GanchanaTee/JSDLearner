@@ -147,10 +147,10 @@
 .flame{
     width: auto;
     margin: auto;
-    }
+}
 .text_over_image{
     position: absolute;
     top: 50%;
     left: calc(50% - 36px) ;
-    }   
+}   
 /*-----------------------------------------------------------------------*/
